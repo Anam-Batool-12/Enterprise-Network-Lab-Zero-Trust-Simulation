@@ -1,0 +1,1 @@
+"Initial firewall validation showed no policy enforcement due to host-originated traffic bypassing the FORWARD chain; resolved by namespacing the admin endpoint (ns-admin) to ensure symmetric inter-segment traffic flow through the kernel's forwarding path — a subtle but critical distinction between locally-generated and routed traffic in Linux netfilter."

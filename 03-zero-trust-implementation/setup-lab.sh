@@ -35,12 +35,16 @@ ip netns exec ns-iot ip link set veth-iot up
 ip netns exec ns-iot ip link set lo up
 ip netns exec ns-iot ip route add default via 10.10.30.1
 
-echo "[*] Connecting Kali to VLAN10..."
+echo "[*] Creating VLAN10 (admin/Kali) namespace..."
+ip netns add ns-admin
 ip link add veth-kali type veth peer name veth-kali-br
+ip link set veth-kali netns ns-admin
 ip link set veth-kali-br master br-vlan10
 ip link set veth-kali-br up
-ip addr add 10.10.10.50/24 dev veth-kali
-ip link set veth-kali up
+ip netns exec ns-admin ip addr add 10.10.10.50/24 dev veth-kali
+ip netns exec ns-admin ip link set veth-kali up
+ip netns exec ns-admin ip link set lo up
+ip netns exec ns-admin ip route add default via 10.10.10.1
 
 echo "[*] Enabling IP forwarding..."
 sysctl -w net.ipv4.ip_forward=1
