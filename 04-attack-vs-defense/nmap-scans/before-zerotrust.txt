@@ -1,0 +1,21 @@
+=== VLAN10 -> VLAN20 (before Zero Trust) ===
+Nmap scan report for 10.10.20.50
+Host is up (0.00069s latency).
+PORT    STATE  SERVICE
+21/tcp  closed ftp
+22/tcp  open   ssh
+23/tcp  closed telnet
+80/tcp  closed http
+443/tcp closed https
+554/tcp closed rtsp
+
+=== VLAN10 -> VLAN30 (before Zero Trust) ===
+Nmap scan report for 10.10.30.50
+Host is up (0.00012s latency).
+PORT    STATE  SERVICE
+21/tcp  closed ftp
+22/tcp  closed ssh
+23/tcp  closed telnet
+80/tcp  closed http
+443/tcp closed https
+554/tcp closed rtsp

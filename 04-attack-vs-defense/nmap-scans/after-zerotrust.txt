@@ -1,0 +1,29 @@
+=== VLAN10 -> VLAN20 (after Zero Trust, default ping discovery) ===
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+(host discovery itself failed — ICMP not whitelisted)
+
+=== VLAN10 -> VLAN20 (after Zero Trust, -Pn forced scan) ===
+Nmap scan report for 10.10.20.50
+Host is up (0.00017s latency).
+PORT    STATE    SERVICE
+21/tcp  filtered ftp
+22/tcp  open     ssh
+23/tcp  filtered telnet
+80/tcp  filtered http
+443/tcp filtered https
+554/tcp filtered rtsp
+
+=== VLAN10 -> VLAN30 (after Zero Trust, default ping discovery) ===
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+(host discovery itself failed — ICMP not whitelisted)
+
+=== VLAN10 -> VLAN30 (after Zero Trust, -Pn forced scan) ===
+Nmap scan report for 10.10.30.50
+Host is up.
+PORT    STATE    SERVICE
+21/tcp  filtered ftp
+22/tcp  filtered ssh
+23/tcp  filtered telnet
+80/tcp  filtered http
+443/tcp filtered https
+554/tcp filtered rtsp
