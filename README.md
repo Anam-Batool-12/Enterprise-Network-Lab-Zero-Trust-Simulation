@@ -88,7 +88,8 @@ The most significant finding — that the absence of drop-counter activity in on
 
 ## Research paper
 
-This repository is the working dataset for a paper on implementing and validating Zero Trust network policies in a reproducible, low-cost testbed. Draft materials, an 11-paper literature review, and the current paper draft are in [`research-notes/`](research-notes/), including [`research-notes/zero-trust-paper.pdf`](research-notes/zero-trust-paper.pdf).
+This repository is the working dataset for a paper on implementing and validating Zero Trust network policies in a reproducible, low-cost testbed. Draft materials, an 11-paper literature review, and the current paper draft are in [`research-notes/`](research-notes/), including [`research-notes/zero-trust-paper.pdf`](research-notes/Zero_Trust_Testbed_Paper(1).docx
+).
 
 ## Roadmap
 
